@@ -8,13 +8,28 @@ import { AdminComponent } from './admin.component';
 import { AdminRoutingModule } from './admin.routing';
 import { UiModule } from '../ui/ui.module';
 
+<<<<<<< HEAD
+=======
+import { DashboardModule } from './dashboard/dashboard.module';
+import { UsersModule } from './users/users.module';
+import { RolesModule } from './roles/roles.module';
+
+>>>>>>> base of admin module
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     // NgbModule,
+<<<<<<< HEAD
     SDKBrowserModule,
     UiModule,
+=======
+    SDKBrowserModule
+    UiModule,
+    DashboardModule,
+    UsersModule,
+    RolesModule,
+>>>>>>> base of admin module
     AdminRoutingModule
   ],
   exports: [
