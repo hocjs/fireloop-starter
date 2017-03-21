@@ -8,7 +8,7 @@ import { AdminRoutingModule } from './admin.routing';
 import { UiModule } from '../ui/ui.module';
 
 import { DashboardModule } from './dashboard/dashboard.module';
-import { UsersModule } from './users/users.module';
+// import { UsersModule } from './users/users.module';
 import { RolesModule } from './roles/roles.module';
 
 @NgModule({
@@ -18,7 +18,7 @@ import { RolesModule } from './roles/roles.module';
     // NgbModule,
     UiModule,
     DashboardModule,
-    UsersModule,
+    // UsersModule,
     RolesModule,
     AdminRoutingModule
   ],
