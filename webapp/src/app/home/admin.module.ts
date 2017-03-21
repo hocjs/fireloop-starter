@@ -8,20 +8,13 @@ import { AdminComponent } from './admin.component';
 import { AdminRoutingModule } from './admin.routing';
 import { UiModule } from '../ui/ui.module';
 
-import { DashboardModule } from './dashboard/dashboard.module';
-import { UsersModule } from './users/users.module';
-import { RolesModule } from './roles/roles.module';
-
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     // NgbModule,
-    SDKBrowserModule
+    SDKBrowserModule,
     UiModule,
-    DashboardModule,
-    UsersModule,
-    RolesModule,
     AdminRoutingModule
   ],
   exports: [
