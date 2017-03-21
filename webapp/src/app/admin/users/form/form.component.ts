@@ -3,16 +3,7 @@ import { User } from '../../../shared/sdk/models/User'
 
 @Component({
   selector: 'app-user-form',
-  template: `
-    <form (submit)="submit()">
-      <div class="input-group">
-        <input class="form-control" required name="user" type="text" [(ngModel)]="user.text" placeholder="Add User" />
-        <span class="input-group-btn">
-          <button class="btn btn-secondary">Add User</button>
-        </span>
-      </div>
-    </form>
-  `,
+  templateUrl: './form.component.html',
 })
 export class FormComponent {
 

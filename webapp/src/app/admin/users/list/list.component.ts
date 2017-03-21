@@ -5,17 +5,7 @@ import { RealTime } from '../../../shared/sdk/services/core/real.time'
 
 @Component({
   selector: 'app-user-list',
-  template: `
-    <app-user-form (create)="create($event)"></app-user-form>
-    <ul *ngIf="userRef" class="list-unstyled mb-0 mt-3 px-3">
-      <li *ngFor="let user of users">
-        <app-user-list-item
-          (done)="done($event)"
-          (update)="update($event)"
-          (remove)="remove($event)" [user]="user"></app-user-list-item>
-      </li>
-    </ul>
-  `,
+  templateUrl: './list.component.html',
 })
 export class ListComponent {
 
