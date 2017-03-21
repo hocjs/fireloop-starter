@@ -6,6 +6,7 @@ import { RealTime } from '../../../shared/sdk/services/core/real.time'
 @Component({
   selector: 'app-user-list',
 <<<<<<< HEAD
+<<<<<<< HEAD
   templateUrl: './list.component.html',
 =======
   template: `
@@ -20,6 +21,9 @@ import { RealTime } from '../../../shared/sdk/services/core/real.time'
     </ul>
   `,
 >>>>>>> base of admin module
+=======
+  templateUrl: './list.component.html',
+>>>>>>> add html files
 })
 export class ListComponent {
 

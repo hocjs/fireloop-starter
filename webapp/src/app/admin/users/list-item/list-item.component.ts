@@ -4,6 +4,7 @@ import { User } from '../../../shared/sdk/models/User'
 @Component({
   selector: 'app-user-list-item',
 <<<<<<< HEAD
+<<<<<<< HEAD
   templateUrl: './list-item.component.html',
 =======
   template: `
@@ -23,6 +24,9 @@ import { User } from '../../../shared/sdk/models/User'
     </div>
   `,
 >>>>>>> base of admin module
+=======
+  templateUrl: './list-item.component.html',
+>>>>>>> add html files
 })
 export class ListItemComponent {
 
