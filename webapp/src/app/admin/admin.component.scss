@@ -40,17 +40,20 @@
   i {
     color        : darken($brand-primary, 25%);
     margin-bottom: 25px;
-    text-shadow  : 1px 1px 3px $brand-primary;
+    text-shadow  : 2px 2px 1px $brand-primary;
   }
 
   &:hover {
-    .card-header {
-      color: darken($brand-primary, 25%) !important;
-    }
-
     .card,
     .card-header {
-      background: lighten($brand-primary, 20%);
+      background  : darken($brand-primary, 25%);
+      border-color: darken($brand-primary, 25%);
+    }
+
+    .card-header,
+    i {
+      color      : #fff !important;
+      text-shadow: 2px 2px 0 $brand-primary;
     }
   }
 }

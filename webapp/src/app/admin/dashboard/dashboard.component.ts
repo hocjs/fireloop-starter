@@ -1,6 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { UserService } from '../users/user.service';
 import { RoleService } from '../roles/role.service';
+import { RealTime } from '../../shared/sdk/services/core/real.time';
+import { FireLoopRef, User, Role } from '../../shared/sdk/models';
+import { Subscription } from 'rxjs/Subscription';
 
 @Component({
   selector: 'app-admin-dashboard',
@@ -24,14 +27,30 @@ import { RoleService } from '../roles/role.service';
   styleUrls: ['../admin.component.scss']
 })
 
-export class DashboardComponent {
+export class DashboardComponent implements OnInit {
 
-  private dashCards: any = [];
+  dashCards: any = [];
+  // users
+  // public users: User[] = new Array<User>();
+  // public userRef: FireLoopRef<User>;
+  // roles
+  // public roles: Role[] = new Array<Role>();
+  // public roleRef: FireLoopRef<Role>;
+  // subscriptions
+  // private subscriptions: Subscription[] = new Array<Subscription>();
 
   constructor(
     private userService: UserService,
-    private roleService: RoleService
+    private roleService: RoleService,
+    // private rt: RealTime
   ) {
+    // this.subscriptions.push(
+    //   this.rt.onReady().subscribe(() => {
+    //     this.subscriptions.push(this.userService.userRef.on('change').subscribe((users: User[]) => (this.users = users)));
+    //   }));
+  }
+
+  ngOnInit() {
     this.dashCards = [
       {
         icon: 'users',

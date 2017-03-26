@@ -10,7 +10,7 @@ export class UserService implements OnDestroy {
 
   // users
   public users: User[] = new Array<User>();
-  private userRef: FireLoopRef<User>;
+  public userRef: FireLoopRef<User>;
 
   // subscriptions
   private subscriptions: Subscription[] = new Array<Subscription>();
