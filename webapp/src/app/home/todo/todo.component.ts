@@ -1,9 +1,9 @@
 import { Component, OnDestroy } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { Todo } from '../shared/sdk/models/Todo';
+import { Todo } from '../../shared/sdk/models/Todo';
 import { TodoFormComponent } from './todo-form.component';
 import { TodoService } from './todo.service';
-import { UIService } from '../ui/ui.service';
+import { UIService } from '../../ui/ui.service';
 import { Subscription } from 'rxjs/Subscription';
 
 @Component({
