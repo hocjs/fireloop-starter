@@ -8,11 +8,8 @@ import { Observable } from 'rxjs/Observable';
 @Injectable()
 export class TodoService implements OnDestroy {
 
-  // todos
   private todos: Todo[] = new Array<Todo>();
   private todoRef: FireLoopRef<Todo>;
-
-  // subscriptions
   private subscriptions: Subscription[] = new Array<Subscription>();
 
   constructor(

@@ -8,11 +8,8 @@ import { Observable } from 'rxjs/Observable';
 @Injectable()
 export class UserService implements OnDestroy {
 
-  // users
   public users: User[] = new Array<User>();
   public userRef: FireLoopRef<User>;
-
-  // subscriptions
   private subscriptions: Subscription[] = new Array<Subscription>();
 
   constructor(
@@ -111,7 +108,6 @@ export class UserService implements OnDestroy {
     if (formType === 'update') {
       fields.splice(1, 1);
     }
-    // console.log(fields);
     return fields;
   }
 

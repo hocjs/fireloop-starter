@@ -60,9 +60,7 @@ export class TodoComponent implements OnDestroy {
     switch (event.type) {
       case 'create':
         this.subscriptions.push(this.todoService
-          .upsert(event.payload)
-          .subscribe(
-          () => {
+          .upsert(event.payload).subscribe(() => {
             this.modalRef.close();
             this.uiService.toastSuccess('Todo Created', 'The Todo was created successfully.');
           },
@@ -74,9 +72,7 @@ export class TodoComponent implements OnDestroy {
         break;
       case 'update':
         this.subscriptions.push(this.todoService
-          .upsert(event.payload)
-          .subscribe(
-          () => {
+          .upsert(event.payload).subscribe(() => {
             this.modalRef.close();
             this.uiService.toastSuccess('Todo Updated', 'The Todo was updated successfully.');
           },
@@ -88,9 +84,7 @@ export class TodoComponent implements OnDestroy {
         break;
       case 'delete':
         this.subscriptions.push(this.todoService
-          .delete(event.payload)
-          .subscribe(
-          () => {
+          .delete(event.payload).subscribe(() => {
             this.uiService.toastSuccess('Todo Deleted', 'The Todo was deleted successfully.');
           },
           (err) => {
