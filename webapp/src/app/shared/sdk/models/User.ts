@@ -6,6 +6,8 @@ export interface UserInterface {
   realm?: string;
   username?: string;
   password: string;
+  firstName: string;
+  lastName: string;
   challenges?: any;
   email: string;
   emailVerified?: boolean;
@@ -23,6 +25,8 @@ export class User implements UserInterface {
   realm: string;
   username: string;
   password: string;
+  firstName: string;
+  lastName: string;
   challenges: any;
   email: string;
   emailVerified: boolean;
@@ -50,7 +54,7 @@ export class User implements UserInterface {
   * @license MIT
   * This method creates an instance of User for dynamic purposes.
   **/
-  public static factory(data: UserInterface): User{
+  public static factory(data: UserInterface): User {
     return new User(data);
   }
   /**
